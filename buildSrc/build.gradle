@@ -1,0 +1,16 @@
+plugins {
+    id 'groovy-gradle-plugin'
+}
+
+repositories {
+    gradlePluginPortal() // so that external plugins can be resolved in dependencies section
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-gradle-plugin:2.7.16'
+    implementation 'io.spring.gradle:dependency-management-plugin:1.0.15.RELEASE'
+}
+
+tasks.named('test', Test) {
+    useJUnitPlatform()
+}
