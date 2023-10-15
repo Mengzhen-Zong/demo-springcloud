@@ -1,4 +1,4 @@
-package com.example.service01;
+package com.example.serviceeureka;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableEurekaClient
 @SpringBootApplication
-public class Service01Application {
+public class ServiceEurekaApplication {
 
     @Value("${output}")
     private String output;
@@ -21,7 +21,7 @@ public class Service01Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Service01Application.class, args);
+        SpringApplication.run(ServiceEurekaApplication.class, args);
     }
 
     public void setOutput(String output) {

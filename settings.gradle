@@ -1,6 +1,6 @@
 rootProject.name = 'demo-springcloud'
-include 'service-01'
 include 'eureka'
 include 'gateway'
 include 'config'
+include 'service-eureka'
 include 'service-nacos'
